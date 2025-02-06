@@ -15,5 +15,8 @@ This repository provides a Fortinet firewall configuration to allow **Sophos Cen
 ### Contributing
 Feel free to suggest updates or improvements.
 
+## we have setup this in a fortinet firewall to only allow sophos cenyral traffic and block all other internet traffic. this work fine.
+if you still having issue please check sophos doc for updated domain list and add the same.
+
 ---
 ⭐ **Star this repo if you find it useful!**
