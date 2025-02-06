@@ -1,0 +1,19 @@
+# Fortinet Firewall FQDN for Sophos Central
+
+This repository provides a Fortinet firewall configuration to allow **Sophos Central** traffic using FQDN-based address objects.
+
+## How to Use
+1. Copy the configuration file.
+2. Upload it to your **FortiGate** firewall.
+3. Apply the settings to ensure **Sophos services** work without issues.
+
+## Notes
+- This configuration includes all necessary **Sophos FQDNs**.
+- Works with **FortiOS** firewalls.
+- Helps in **allowing Sophos updates, management, and security services**.
+
+### Contributing
+Feel free to suggest updates or improvements.
+
+---
+⭐ **Star this repo if you find it useful!**
