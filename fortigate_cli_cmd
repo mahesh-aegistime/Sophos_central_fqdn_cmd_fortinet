@@ -1,0 +1,135 @@
+config firewall address
+edit "SCE-1"
+        set type fqdn
+        set fqdn "dci.sophosupd.com"
+    next
+    edit "SCE-2"
+        set type fqdn
+        set fqdn "d1.sophosupd.com"
+    next
+    edit "SCE-3"
+        set type fqdn
+        set fqdn "d2.sophosupd.com"
+    next
+    edit "SCE-4"
+        set type fqdn
+        set fqdn "d3.sophosupd.com"
+    next
+    edit "SCE-5"
+        set type fqdn
+        set fqdn "dci.sophosupd.net"
+    next
+    edit "SCE-6"
+        set type fqdn
+        set fqdn "d1.sophosupd.net"
+    next
+    edit "SCE-7"
+        set type fqdn
+        set fqdn "d2.sophosupd.net"
+    next
+    edit "SCE-8"
+        set type fqdn
+        set fqdn "d3.sophosupd.net"
+    next
+    edit "SCE-9"
+        set type fqdn
+        set fqdn "t1.sophosupd.com"
+    next
+    edit "SCE-10"
+        set type fqdn
+        set fqdn "sdu-feedback.sophos.com"
+    next
+    edit "SCE-11"
+        set type fqdn
+        set fqdn "sophosxl.net"
+    next
+    edit "SCE-12"
+        set type fqdn
+        set fqdn "4.sophosxl.net"
+    next
+    edit "SCE-13"
+        set type fqdn
+        set fqdn "samples.sophosxl.net"
+    next
+    edit "SCE-14"
+        set type fqdn
+        set fqdn "ocsp.globalsign.com"
+    next
+    edit "SCE-15"
+        set type fqdn
+        set fqdn "ocsp2.globalsign.com"
+    next
+    edit "SCE-16"
+        set type fqdn
+        set fqdn "crl.globalsign.com"
+    next
+    edit "SCE-17"
+        set type fqdn
+        set fqdn "crl.globalsign.net"
+    next
+    edit "SCE18"
+        set type fqdn
+        set fqdn "ocsp.digicert.com"
+    next
+    edit "SCE-19"
+        set type fqdn
+        set fqdn "crl3.digicert.com"
+    next
+    edit "SCE-20"
+        set type fqdn
+        set fqdn "crl4.digicert.com"
+    next
+    edit "SCE-21"
+        set type fqdn
+        set fqdn "central.sophos.com"
+    next
+    edit "SCE-22"
+        set type fqdn
+        set fqdn "cloud-assets.sophos.com"
+    next
+    edit "SCE-23"
+        set type fqdn
+        set fqdn "sophos.com"
+    next
+    edit "SCE-24"
+        set type fqdn
+        set fqdn "downloads.sophos.com"
+    next
+    edit "SCE-25"
+        set type fqdn
+        set fqdn "e11290.dspg.akamaiedge.net"
+    next
+    edit "SCE-26"
+        set type fqdn
+        set fqdn "api-spinnaker-1451439944.us-east-2.elb.amazonaws.com"
+    next
+    edit "SCE-27"
+        set type fqdn
+        set fqdn "vs.login.msa.akadns6.net"
+    next
+    edit "SCE-29"
+        set type fqdn
+        set fqdn "mcs-cloudstation-us-east-2.prod.hydra.sophos.com"
+    next
+    edit "SCE-30"
+        set subnet 23.36.5.127 255.255.255.255
+    next
+    edit "SCE-31"
+        set type fqdn
+        set fqdn "docs.sophos.com"
+    next
+    edit "SCE-32"
+        set type fqdn
+        set fqdn "4.sophosxl.net"
+    next
+    edit "SCE-33"
+        set type fqdn
+        set fqdn "mcs-cloudstation-us-east-2.prod.hydra.sophos.com"
+    next
+end
+
+config firewall addrgrp
+edit "Sophos-Cloud"
+        set member "SCE-1" "SCE-10" "SCE-11" "SCE-12" "SCE-13" "SCE-14" "SCE-15" "SCE-16" "SCE-17" "SCE-19" "SCE-2" "SCE-20" "SCE-3" "SCE-4" "SCE-5" "SCE-6" "SCE-7" "SCE-8" "SCE-9" "SCE18" "SCE-21" "SCE-22" "SCE-23" "SCE-24" "SCE-25" "SCE-26" "SCE-27" "SCE-29" "SCE-30" "SCE-31" "SCE-32" "SCE-33"
+    next
+end
